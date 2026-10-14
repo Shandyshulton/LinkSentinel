@@ -1,0 +1,132 @@
+.body {
+  flex: 1;
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.rangeSelect {
+  height: 48px;
+  padding: 0 16px;
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-md);
+  font-size: 15px;
+  color: var(--color-text-strong);
+  background: var(--color-bg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rangeMeta {
+  font-size: 13px;
+  color: var(--color-text-muted);
+}
+
+.cards {
+  display: flex;
+  gap: 12px;
+}
+
+.card {
+  flex: 1;
+  padding: 16px;
+  background: var(--color-surface-alt);
+  border-radius: var(--radius-md);
+}
+
+.cardNum {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--color-text-strong);
+}
+
+.cardLabel {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  margin-top: 2px;
+}
+
+.distCard {
+  padding: 16px;
+  background: var(--color-surface-alt);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.distTitle {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-text-strong);
+}
+
+.distRow {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.distTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.distLabel {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.distCount {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.distBar {
+  height: 8px;
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.distFill {
+  height: 100%;
+  border-radius: var(--radius-full);
+  transition: width 0.4s ease;
+  min-width: 2px;
+}
+
+.distNote {
+  font-size: 13px;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+}
+
+.failedCard {
+  padding: 16px;
+  background: var(--color-surface-alt);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.failedTitle {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-high-strong);
+}
+
+.failedText {
+  font-size: 14px;
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+}
+
+.disclaimer {
+  font-size: 13px;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+}

@@ -1,0 +1,10 @@
+node_modules/
+dist/
+*.local
+.vite/
+*.tsbuildinfo
+
+# Env lokal (nilai asli; jangan di-commit). .env.example tetap di-track.
+.env
+.env.*
+!.env.example

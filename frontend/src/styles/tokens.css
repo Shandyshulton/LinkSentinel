@@ -1,0 +1,62 @@
+/* Design tokens LinkSentinel — diturunkan dari desain Figma High Fidelity. */
+:root {
+  /* Brand / primary */
+  --color-primary: #2563eb;
+  --color-primary-hover: #1d4ed8;
+  --color-primary-active: #1e40af;
+
+  /* Teks */
+  --color-text: #1e293b;
+  --color-text-strong: #0f172a;
+  --color-text-secondary: #64748b;
+  --color-text-muted: #94a3b8;
+
+  /* Permukaan & garis */
+  --color-bg: #ffffff;
+  --color-surface: #f8fafc;
+  --color-surface-alt: #f1f5f9;
+  --color-border: #e2e8f0;
+  --color-border-strong: #cbd5e1;
+
+  /* Risiko: rendah (hijau) */
+  --color-low: #16a34a;
+  --color-low-strong: #15803d;
+  --color-low-bg: #f0fdf4;
+  --color-low-border: #bbf7d0;
+
+  /* Risiko: mencurigakan (oranye) */
+  --color-suspicious: #b45309;
+  --color-suspicious-strong: #92400e;
+  --color-suspicious-bg: #fffbeb;
+  --color-suspicious-border: #fde68a;
+
+  /* Risiko: tinggi (merah) */
+  --color-high: #dc2626;
+  --color-high-strong: #b91c1c;
+  --color-high-bg: #fef2f2;
+  --color-high-border: #fecaca;
+
+  /* Radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-full: 999px;
+
+  /* Spasi */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+
+  /* Tipografi */
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+
+  /* Ukuran layar mobile (sesuai frame Figma 390x844) */
+  --screen-width: 390px;
+  --screen-height: 844px;
+}

@@ -1,0 +1,18 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Log
+*.log
+
+# Referensi desain (bisa diregenerasi dari Figma)
+.figma-ref/
+
+# Env (jaga-jaga bila ada di root)
+.env
+.env.local

@@ -1,4 +1,5 @@
 import type { Check, Settings, Stats } from "../types";
+import { getDeviceId } from "../lib/device";
 
 const BASE = "/api";
 
@@ -14,8 +15,13 @@ export class ApiError extends Error {
 
 async function request<T>(path: string, init?: RequestInit): Promise<T> {
   const res = await fetch(`${BASE}${path}`, {
-    headers: { "Content-Type": "application/json" },
     ...init,
+    headers: {
+      "Content-Type": "application/json",
+      // Pemisah riwayat per perangkat. Tidak pernah di-log.
+      "X-Device-Id": getDeviceId(),
+      ...init?.headers,
+    },
   });
 
   if (res.status === 204) {

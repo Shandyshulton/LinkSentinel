@@ -1,0 +1,20 @@
+.bar {
+  height: 32px;
+  flex: 0 0 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.time {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.indicators {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}

@@ -1,0 +1,144 @@
+.body {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.sectionTitle {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-text-strong);
+  margin-bottom: 8px;
+}
+
+.pref {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.pref:last-child {
+  border-bottom: none;
+}
+
+.prefText {
+  flex: 1;
+  min-width: 0;
+}
+
+.prefName {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-text-strong);
+}
+
+.prefDesc {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+  margin-top: 2px;
+}
+
+.prefControl {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.prefState {
+  font-size: 11px;
+  color: var(--color-text-muted);
+}
+
+.dangerNote {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.aboutTitle {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-text-strong);
+}
+
+.aboutLine {
+  font-size: 14px;
+  color: var(--color-text-secondary);
+}
+
+.aboutLink {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.aboutDisclaimer {
+  font-size: 13px;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+  margin-top: 2px;
+}
+
+/* FAQ / Tanya jawab (accordion) */
+.faqList {
+  display: flex;
+  flex-direction: column;
+}
+
+.faqItem {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.faqItem:last-child {
+  border-bottom: none;
+}
+
+.faqQuestion {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 0;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-text-strong);
+}
+
+.faqChevron {
+  flex: 0 0 auto;
+  color: var(--color-text-muted);
+  transition: transform 0.18s;
+}
+
+.faqChevron[data-open="true"] {
+  transform: rotate(180deg);
+}
+
+.faqAnswer {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  padding: 0 0 14px;
+}
